@@ -26,7 +26,6 @@ export default {
         numero: '1',
         titulo: 'Huesped',
         desarrolloContenidos: true,
-        subMenu: [{}],
       },
       {
         nombreRuta: 'tema2',
@@ -155,7 +154,6 @@ export default {
         numero: '6',
         titulo: 'Reportes',
         desarrolloContenidos: true,
-        subMenu: [{}],
       },
       {
         nombreRuta: 'tema7',
@@ -163,7 +161,6 @@ export default {
         numero: '7',
         titulo: 'Recibo y entrega de turno',
         desarrolloContenidos: true,
-        subMenu: [{}],
       },
       {
         nombreRuta: 'tema8',
@@ -171,7 +168,6 @@ export default {
         numero: '8',
         titulo: 'Bitácoras',
         desarrolloContenidos: true,
-        subMenu: [{}],
       },
       {
         nombreRuta: 'tema9',

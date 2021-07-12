@@ -20,7 +20,7 @@
 
     .row.mb-5
       .col-lg-5
-        figures
+        figure
           img(src='@/assets/curso/tema1/img02.svg')   
       .col-lg-1       
       .col-lg-6
@@ -29,8 +29,46 @@
 
     p.mb-5 Se estudiarán primero los tipos y características de los huéspedes según el colectivo al que pertenecen.
 
-    div.mb-5
-      strong Componente creativo de Natalia
+    div.mb-5.box
+      figure
+        img(src='@/assets/curso/tema1/img08.svg')  
+
+      figure.img-hover-zoom--brightness.imgc1(@mouseover="mostrarDiv(1);")
+        a
+          img(src='@/assets/curso/tema1/img10.png')  
+      
+      figure.img-hover-zoom--brightness.imgc2(@mouseover="mostrarDiv(2);")
+        a
+          img(src='@/assets/curso/tema1/img11.png') 
+
+      figure.img-hover-zoom--brightness.imgc3(@mouseover="mostrarDiv(3);")
+        a
+          img(src='@/assets/curso/tema1/img12.png') 
+
+      figure.img-hover-zoom--brightness.imgc4(@mouseover="mostrarDiv(4);")
+        a
+          img(src='@/assets/curso/tema1/img13.png') 
+
+      figure.img-hover-zoom--brightness.imgc5(@mouseover="mostrarDiv(5);")
+        a
+          img(src='@/assets/curso/tema1/img14.png')
+
+      figure.img-hover-zoom--brightness.imgc6(@mouseover="mostrarDiv(6);")
+        a
+          img(src='@/assets/curso/tema1/img15.png')
+
+      figure.img-hover-zoom--brightness.imgc7(@mouseover="mostrarDiv(7);")
+        a
+          img(src='@/assets/curso/tema1/img16.png')
+
+      figure.img-hover-zoom--brightness.imgc8(@mouseover="mostrarDiv(8);")
+        a
+          img(src='@/assets/curso/tema1/img17.png')
+
+      div.p-3.contenido1(id="myDiv1" ref="myDiv1" style="display:none")
+        p.contenido2(v-html="contenidocapa1")
+      
+
 
     p.mb-5 También es posible clasificar a los huéspedes según su frecuencia de viaje; este aspecto adicional determina, junto con el tipo de viajero, las características de los huéspedes, y aspectos como la sensibilidad al precio y los servicios esperados. A continuación, se conocerán cada uno de ellos.
 
@@ -41,6 +79,8 @@
 export default {
   name: 'Tema1',
   data: () => ({
+    contenidocapa1:
+      'Lorem ipsum dolor ddasdasd asdasd asdasd a asd sd asdasd sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus',
     datosSlyder: [
       {
         titulo: 'Cliente walk-in',
@@ -81,6 +121,52 @@ export default {
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    mostrarDiv(p) {
+      this.$refs.myDiv1.style.display = 'inline'
+      if (p == 1) {
+        this.$refs.myDiv1.style.left = '0%'
+        this.$refs.myDiv1.style.top = '0%'
+        this.contenidocapa1 =
+          'Los adultos mayores que por su disponibilidad de tiempo y recursos viajan generalmente con fines de esparcimiento. Se les conocen como la generación Boomer.<br>Por lo general, disponen de presupuestos más altos a la hora de viajar y suelen viajar en pareja o con amigos. Sus motivaciones de viaje los lleva a disfrutar las áreas del hotel en forma tranquila, requieren mayores explicaciones para el uso de las mismas y sus necesidades como viajeros generalmente se enfoca en salir de la rutina, por esto contar con un excelente servicio les reconforta.'
+      } else if (p == 2) {
+        this.$refs.myDiv1.style.left = '65.6%'
+        this.$refs.myDiv1.style.top = '0%'
+        this.contenidocapa1 =
+          'Este tipo de viajeros se da ahora con mayor frecuencia y los hoteles afrontan la solicitud del servicio de alojamiento para las familias en temporadas de vacaciones o fines de semana y/o con festivos. En este grupo la disponibilidad de dinero es más ajustada, por lo que son abiertos a escuchar ofertas de todo incluido y a las acomodaciones múltiples.<br>En las familias con niños generalmente los padres buscan tiempos de esparcimiento con sus hijos, sus solicitudes en el hotel varían de acuerdo con la edad de sus hijos, temas como la necesidad de contar con cuna, coche o silla de comedor especial entre otros, se hace presente.<br>En el momento de realizar su registro en el hotel, el recepcionista debe contar con la habilidad para identificar las necesidades y poder suplirlas con el equipo de trabajo.'
+      } else if (p == 3) {
+        this.$refs.myDiv1.style.left = '35.5%'
+        this.$refs.myDiv1.style.top = '24%'
+        this.contenidocapa1 =
+          'Son personas que trabajan con el estado y viajan por trabajo, pero tienen un matiz adicional y es que, por lo general y en virtud del cargo que desempeñan o del rango que tengan, su tratamiento puede requerir un protocolo específico, principalmente por su seguridad.<br>Por lo tanto, el hotel determina su propio procedimiento para el manejo de ellos.<br>Temas como el lugar en donde realizan su registro, habitaciones para su personal de seguridad ubicadas de manera estratégica y forma de atender sus requerimientos deben ser considerados.'
+      } else if (p == 4) {
+        this.$refs.myDiv1.style.left = '35.5%'
+        this.$refs.myDiv1.style.top = '0%'
+        this.contenidocapa1 =
+          'Esta tipología de huéspedes son una congregación de personas que viajan en las mismas fechas y con motivaciones de viaje similares (una convención, un tour, etc.). Poseen ciertos tratamientos y servicios específicos comunes a todos ellos.<br>Cada hotel establece el número base para determinar llamar “grupo” teniendo en cuenta el número de personas y/o de habitaciones que van a alojar con un mismo código de reserva. Por lo general se puede decir que se considera grupo un número superior a 10 personas o 10 habitaciones en acomodaciones según sus necesidades.<br>Para su atención también se debe establecer un protocolo, que contemple espacio especial para su recibimiento, control de equipajes, áreas especiales para el consumo de alimentos y si el motivo de viaje es empresarial, van a requerir de salones adecuados para realizar sus reuniones: se suelen otorgar descuentos en la tarifa y una serie de servicios adicionales.'
+      } else if (p == 5) {
+        this.$refs.myDiv1.style.left = '65.6%'
+        this.$refs.myDiv1.style.top = '30%'
+        this.contenidocapa1 =
+          'Estos son grupos de estudiantes, que deciden tomar un año sabático para conocer el mundo. Viajan con presupuestos más cuidados, pero siempre aprecian una buena conexión de internet y facilidades como lavandería, una ubicación céntrica y recomendaciones en seguridad y transporte.<br>Es una tipología distinta al “mochilero”, ya que, aunque limitados, buscan espacios de alojamiento individuales, esperan un lugar moderno y atractivo con todas las comodidades. Les encanta publicar su experiencia en redes sociales por lo que son fuente potencial de buena o mala publicidad.<br>Este grupo está cobrando gran relevancia, porque se dice que allí están los viajeros frecuentes del futuro.'
+      } else if (p == 6) {
+        this.$refs.myDiv1.style.left = '0%'
+        this.$refs.myDiv1.style.top = '49%'
+        this.contenidocapa1 =
+          'Estos viajeros son los que tienen mayores expectativas y están dispuestos a pagar por la experiencia.<br>Por lo general el precio no es problema para ellos, son sofisticados, pero y se fijan mucho en el valor de lo que obtienen (relación calidad precio).<br>Por lo general, tienen sus viajes son muy bien planeados y con intervención de asesores especializados. La mayoría de las ocasiones son viajeros de edad adulta, entre los 40 y 60 años que viajan en pareja.'
+      } else if (p == 7) {
+        this.$refs.myDiv1.style.left = '31%'
+        this.$refs.myDiv1.style.top = '27%'
+        this.contenidocapa1 =
+          'Este tipo de viajeros prestan mucha atención a la tarifa y se caracterizan porque para alojarse solo requieren lo necesario. Su motivación principal de viaje es insertarse en la cultura y compartir con su entorno.<br>Ellos siempre aprecian los consejos de seguridad y de actividades locales, además de una buena conectividad.<br>Por lo general, se hospedan en hostales, donde el ambiente compartido los enriquece culturalmente.'
+      } else if (p == 8) {
+        this.$refs.myDiv1.style.left = '31%'
+        this.$refs.myDiv1.style.top = '24%'
+        this.contenidocapa1 =
+          'Son los clientes que viajan por motivos de trabajo o negocios, su permanencia generalmente no excede una semana. Suelen ser muy exigentes con el servicio y por lo general son menos sensibles al precio.<br>Generalmente manejan su tiempo con horarios preestablecidos, agenda de reuniones o visita con sus clientes, por lo cual su disposición para realizar su registro en el momento de ingresar al hotel o para el pago de su cuenta en el momento dejarlo, es limitado.<br>Usualmente la empresa para la cual trabaja es la responsable de coordinar todo lo concerniente a su estadía, entre ellos solicitar la reserva, negociar la tarifa, escoger tipo de habitación y pagar la cuenta.'
+      }
+    },
   },
 }
 </script>

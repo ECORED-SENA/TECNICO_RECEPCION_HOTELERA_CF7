@@ -25,8 +25,33 @@
     p.mb-4 Cada hotel adopta su propio modelo organizacional de acuerdo con sus necesidades; así en la recepción se controlan todos los servicios ofrecidos a los clientes y debe mantener una correcta y continua relación con los demás departamentos.
     p.mb-5 El departamento de recepción está conformado por:
 
-    div.mb-5
-      strong Componente creativo de Natalia
+    .row.mb-5
+      .col-lg-2
+      .col-lg-8.box
+        figure
+          img(src='@/assets/curso/tema2/img12.svg') 
+
+        figure.img-hover-zoom--brightness2.imgc2_1
+          a
+            img(src='@/assets/curso/tema2/img13.png')  
+
+        figure.img-hover-zoom--brightness2.imgc3_2
+          a
+            img(src='@/assets/curso/tema2/img13.png')  
+
+        figure.img-hover-zoom--brightness2.imgc3_3
+          a
+            img(src='@/assets/curso/tema2/img14.png')  
+
+        figure.img-hover-zoom--brightness2.imgc3_4
+          a
+            img(src='@/assets/curso/tema2/img15.png') 
+
+        figure.img-hover-zoom--brightness2.imgc3_5
+          a
+            img(src='@/assets/curso/tema2/img16.png') 
+      .col-lg-2
+    div.mb-5      
 
     p Los hoteles con mayor capacidad o volumen de clientes pueden optar por crear departamentos propios de reservas, caja y conserjería.
     

@@ -1,2 +1,1 @@
-module.exports =
-  'Organización del área y front office'
+module.exports = 'Organización del área y front office'

@@ -309,12 +309,8 @@
 
     p.mb-5 En un principio se usaron las pesadas llaves de hierro y luego de cobre; su cometido fundamental era la apertura de las puertas, pero había algo adicional y es que no era tan importante la llave, como el llavero. Este se convirtió por bastante tiempo en la identidad del hotel. Las llaves y sus llaveros eran tan pesadas que servían para que el cliente no olvidara dejarlas en la recepción, y pedirlas al regresar al hotel, lo que tácitamente provocaban la interacción con el huésped. Estas llaves se guardaban en el casillero de madera, con los números de habitación y los nombres de los huéspedes, lo cual ayudaba a los recepcionistas, además de saber si el huésped estaba o no en el hotel, a recordar los nombres y poder brindar un trato más personalizado al huésped.
 
-    figure.mb-5
-      img(src='@/assets/curso/tema3/img06.png') 
-
-    h4.titulo-cuarto Llave magnética para cerradura electrónica
-
-    p Estas llaves se presentan en varios formatos acorde a su tecnología (banda magnética o RDFI - proximidad). Su programación se realiza con un software que integrado al PMS lleva un control de las tarjetas programadas, además de poder inhabilitarlas en caso de pérdida. En la actualidad, con el avance de la tecnología se puede adoptar el sistema de convertir el smartphone del cliente en su propia llave personalizada. Esta tecnología crea un nuevo umbral de seguridad, de control y de personalización en la industria (Canalis, 2021). El recepcionista es el encargado de entregar la llave al huésped en el momento de ingreso, la pérdida de las llaves tiene un costo para el huésped ya que pasa a ser de su responsabilidad durante la estadía.
+   
+    SlyderC(:datos="datosSlyder")    
 
     Separador
 
@@ -323,8 +319,47 @@
 
     p.mb-5 A continuación, se estudiarán los pasos básicos que se deben tener en cuenta al recibir a un huésped:
 
-    div.mb-5
-      strong Componente creativo de Natalia
+    .row.mb-5
+      .col-lg-1
+      .col-lg-10
+        div.divm3.py-5.px-4
+          .row.mb-4
+            .col-3
+            .col-1
+              div.pasoSelect(id="myDiv1" ref="myDiv1" @click="selectDiv(1);")
+                a
+                  p.mb-0.text-center(id="myP1" ref="myP1") Paso
+                  h1.mb-0.text-center(id="myH1" ref="myH1") 01
+            .col-1
+              div(id="myDiv2" ref="myDiv2" @click="selectDiv(2);")
+                a  
+                  p.textoGris.mb-0.text-center(id="myP2" ref="myP2") Paso
+                  h1.textoGris.mb-0.text-center(id="myH2" ref="myH2") 02
+            .col-1
+              div(id="myDiv3" ref="myDiv3" @click="selectDiv(3);")
+                a  
+                  p.textoGris.mb-0.text-center(id="myP3" ref="myP3") Paso
+                  h1.textoGris.mb-0.text-center(id="myH3" ref="myH3") 03
+            .col-1
+              div(id="myDiv4" ref="myDiv4" @click="selectDiv(4);")
+                a  
+                  p.textoGris.mb-0.text-center(id="myP4" ref="myP4") Paso
+                  h1.textoGris.mb-0.text-center(id="myH4" ref="myH4") 04
+            .col-1
+              div(id="myDiv5" ref="myDiv5" @click="selectDiv(5);")
+                a  
+                  p.textoGris.mb-0.text-center(id="myP5" ref="myP5") Paso
+                  h1.textoGris.mb-0.text-center(id="myH5" ref="myH5") 05
+            .col-1
+              div(id="myDiv6" ref="myDiv6" @click="selectDiv(6);")
+                a  
+                  p.textoGris.mb-0.text-center(id="myP6" ref="myP6") Paso
+                  h1.textoGris.mb-0.text-center(id="myH6" ref="myH6") 06
+            .col-3
+
+          div.divm3_2.p-3
+            p(v-html="contenidocapa1")
+      .col-lg-1      
 
     h4.titulo-cuarto Registro de huéspedes individuales
 
@@ -573,7 +608,28 @@
 export default {
   name: 'Tema3',
   data: () => ({
-    // variables de vue
+    datosSlyder: [
+      {
+        titulo: 'Llave mecánica',
+        texto:
+          'Es el tipo de llave para el tipo de cerradura tradicional. Se recomienda en hoteles donde aún se usa este tipo de llaves, usar llaves de seguridad que son más difíciles de copiar. Posteriormente estas llaves mecánicas evolucionaron a llaves de tarjeta perforadas o Ving-Card, que luego se convirtieron en tarjetas magnéticas.',
+        imagen: require('@/assets/curso/tema3/img09.png'),
+      },
+      {
+        titulo: 'Llave magnética para cerradura electrónica',
+        texto:
+          'Estas llaves se presentan en varios formatos acorde a su tecnología (banda magnética o RDFI - proximidad). Su programación se realiza con un software que integrado al PMS lleva un control de las tarjetas programadas, además de poder inhabilitarlas en caso de pérdida. En la actualidad, con el avance de la tecnología se puede adoptar el sistema de convertir el smartphone del cliente en su propia llave personalizada. Esta tecnología crea un nuevo umbral de seguridad, de control y de personalización en la industria (Canalis, 2021). El recepcionista es el encargado de entregar la llave al huésped en el momento de ingreso, la pérdida de las llaves tiene un costo para el huésped ya que pasa a ser de su responsabilidad durante la estadía.',
+        imagen: require('@/assets/curso/tema3/img06.png'),
+      },
+      {
+        titulo: 'Llave maestra',
+        texto:
+          'Es la llave que abre todas las puertas de las habitaciones del hotel. Su control y manejo es responsabilidad del jefe de recepción o a quien asignen y su uso tiene un protocolo establecido por las directivas del hotel. ',
+        imagen: require('@/assets/curso/tema3/img10.png'),
+      },
+    ],
+    contenidocapa1:
+      'Dar la bienvenida: con una sonrisa dar la cordial bienvenida al cliente.',
   }),
   mounted() {
     this.$nextTick(() => {
@@ -582,6 +638,65 @@ export default {
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    selectDiv(p) {
+      this.$refs.myDiv1.style.borderBottom = '0px solid red'
+      this.$refs.myDiv2.style.borderBottom = '0px solid red'
+      this.$refs.myDiv3.style.borderBottom = '0px solid red'
+      this.$refs.myDiv4.style.borderBottom = '0px solid red'
+      this.$refs.myDiv5.style.borderBottom = '0px solid red'
+      this.$refs.myDiv6.style.borderBottom = '0px solid red'
+      this.$refs.myP1.style.color = '#979797'
+      this.$refs.myP2.style.color = '#979797'
+      this.$refs.myP3.style.color = '#979797'
+      this.$refs.myP4.style.color = '#979797'
+      this.$refs.myP5.style.color = '#979797'
+      this.$refs.myP6.style.color = '#979797'
+      this.$refs.myH1.style.color = '#979797'
+      this.$refs.myH2.style.color = '#979797'
+      this.$refs.myH3.style.color = '#979797'
+      this.$refs.myH4.style.color = '#979797'
+      this.$refs.myH5.style.color = '#979797'
+      this.$refs.myH6.style.color = '#979797'
+      if (p == 1) {
+        this.$refs.myDiv1.style.borderBottom = '3px solid #FF9800'
+        this.$refs.myP1.style.color = '#12263F'
+        this.$refs.myH1.style.color = '#12263F'
+        this.contenidocapa1 =
+          'Dar la bienvenida: con una sonrisa dar la cordial bienvenida al cliente.'
+      } else if (p == 2) {
+        this.$refs.myDiv2.style.borderBottom = '3px solid #FF9800'
+        this.$refs.myP2.style.color = '#12263F'
+        this.$refs.myH2.style.color = '#12263F'
+        this.contenidocapa1 =
+          'Realizar el registro: se invita al huésped de manera amable a diligenciar la tarjeta de registro y solicitando presentación de su documento de identidad. El recepcionista debe observar que todos los datos que se soliciten se encuentren completos.'
+      } else if (p == 3) {
+        this.$refs.myDiv3.style.borderBottom = '3px solid #FF9800'
+        this.$refs.myP3.style.color = '#12263F'
+        this.$refs.myH3.style.color = '#12263F'
+        this.contenidocapa1 =
+          'Promocionar los servicios del hotel: el recepcionista es un vendedor, puede ofrecer habitaciones de mejores características a las solicitadas en la reserva presentando las diferentes opciones, en caso de contar con paquetes de alimentación o servicios complementarios darlos a conocer al huésped.'
+      } else if (p == 4) {
+        this.$refs.myDiv4.style.borderBottom = '3px solid #FF9800'
+        this.$refs.myP4.style.color = '#12263F'
+        this.$refs.myH4.style.color = '#12263F'
+        this.contenidocapa1 =
+          'Asignar la habitación de acuerdo con las necesidades y solicitudes del cliente.'
+      } else if (p == 5) {
+        this.$refs.myDiv5.style.borderBottom = '3px solid #FF9800'
+        this.$refs.myP5.style.color = '#12263F'
+        this.$refs.myH5.style.color = '#12263F'
+        this.contenidocapa1 =
+          'Solicitar garantía: se debe preguntar al huésped cuál será su forma de pago.'
+      } else if (p == 6) {
+        this.$refs.myDiv6.style.borderBottom = '3px solid #FF9800'
+        this.$refs.myP6.style.color = '#12263F'
+        this.$refs.myH6.style.color = '#12263F'
+        this.contenidocapa1 =
+          'Despedida: se le manifiesta al huésped que se desea una feliz estadía, se le entrega la llave al botones que lo acompañará hasta la habitación presentándose por su nombre.  '
+      }
+    },
   },
 }
 </script>

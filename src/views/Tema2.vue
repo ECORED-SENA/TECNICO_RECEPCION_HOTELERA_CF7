@@ -37,19 +37,19 @@
 
         figure.img-hover-zoom--brightness2.imgc3_2
           a
-            img(src='@/assets/curso/tema2/img13.png')  
+            img(src='@/assets/curso/tema2/img14.png')  
 
         figure.img-hover-zoom--brightness2.imgc3_3
           a
-            img(src='@/assets/curso/tema2/img14.png')  
+            img(src='@/assets/curso/tema2/img15.png')  
 
         figure.img-hover-zoom--brightness2.imgc3_4
           a
-            img(src='@/assets/curso/tema2/img15.png') 
+            img(src='@/assets/curso/tema2/img16.png') 
 
         figure.img-hover-zoom--brightness2.imgc3_5
           a
-            img(src='@/assets/curso/tema2/img16.png') 
+            img(src='@/assets/curso/tema2/img17.png') 
       .col-lg-2
     div.mb-5      
 
@@ -261,15 +261,89 @@
 
     p.mb-5 A continuación, se comparten estas relaciones en la infografía. 
 
-    div.mb-5
-      strong Componente creativo de Natalia
+    .row.mb-8
+      .col-lg-1
+      .col-lg-10.p-0
+        p.BorTit.mb-0 Relaciones con otros departamentos
+      .col-lg-1
+    
+    .row
+      .col-lg-1
+      .col-lg-10.p-0
+        div.box
+          figure
+            //p.BorTit Relaciones con otros departamentos
+            img(src='@/assets/curso/tema2/img18.svg')  
 
+          figure.img-hover-zoom2.imgc4_1(@mouseover="mostrarDiv(1);")
+            a
+              img(src='@/assets/curso/tema2/img19.svg')  
+
+          figure.img-hover-zoom2.imgc4_2(@mouseover="mostrarDiv(2);")
+            a
+              img(src='@/assets/curso/tema2/img20.svg') 
+
+          figure.img-hover-zoom2.imgc4_3(@mouseover="mostrarDiv(3);")
+            a
+              img(src='@/assets/curso/tema2/img21.svg') 
+
+          figure.img-hover-zoom2.imgc4_4(@mouseover="mostrarDiv(4);")
+            a
+              img(src='@/assets/curso/tema2/img22.svg') 
+
+          figure.img-hover-zoom2.imgc4_5(@mouseover="mostrarDiv(5);")
+            a
+              img(src='@/assets/curso/tema2/img23.svg') 
+
+          figure.img-hover-zoom2.imgc4_6(@mouseover="mostrarDiv(6);")
+            a
+              img(src='@/assets/curso/tema2/img24.svg') 
+
+          figure.img-hover-zoom2.imgc4_7(@mouseover="mostrarDiv(7);")
+            a
+              img(src='@/assets/curso/tema2/img25.svg')
+
+          figure.img-hover-zoom2.imgc4_8(@mouseover="mostrarDiv(8);")
+            a
+              img(src='@/assets/curso/tema2/img26.svg')
+
+          figure.img-hover-zoom2.imgc4_9(@mouseover="mostrarDiv(9);")
+            a
+              img(src='@/assets/curso/tema2/img27.svg')
+
+          figure.img-hover-zoom2.imgc4_10(@mouseover="mostrarDiv(10);")
+            a
+              img(src='@/assets/curso/tema2/img28.svg')
+
+          figure.img-hover-zoom2.imgc4_11(@mouseover="mostrarDiv(11);")
+            a
+              img(src='@/assets/curso/tema2/img29.svg')
+
+          figure.img-hover-zoom2.imgc4_12(@mouseover="mostrarDiv(12);")
+            a
+              img(src='@/assets/curso/tema2/img30.svg')
+
+          figure.img-hover-zoom2.imgc4_13(@mouseover="mostrarDiv(13);")
+            a
+              img(src='@/assets/curso/tema2/img31.svg')
+
+          div.contenido2.py-1.px-2(id="myDiv1" ref="myDiv1" style="display:inline")
+            h4.mb-0(v-html="contenidocapa1")
+            i 
+              b(v-html="contenidocapa2")
+
+            //p.BorTit.contenido2(v-html="contenidocapa1")
+
+          
+      .col-lg-1
 </template>
 
 <script>
 export default {
   name: 'Tema2',
   data: () => ({
+    contenidocapa1: 'Titulo Principal',
+    contenidocapa2: 'SubTitulo',
     // variables de vue
   }),
   mounted() {
@@ -279,6 +353,77 @@ export default {
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    mostrarDiv(p) {
+      this.$refs.myDiv1.style.display = 'inline'
+      if (p == 1) {
+        this.$refs.myDiv1.style.left = '54%'
+        this.$refs.myDiv1.style.top = '2%'
+        this.contenidocapa1 = 'Caja'
+        this.contenidocapa2 = 'Cashier'
+      } else if (p == 2) {
+        this.$refs.myDiv1.style.left = '64%'
+        this.$refs.myDiv1.style.top = '9%'
+        this.contenidocapa1 = 'Conserje'
+        this.contenidocapa2 = 'Consierge'
+      } else if (p == 3) {
+        this.$refs.myDiv1.style.left = '71%'
+        this.$refs.myDiv1.style.top = '22%'
+        this.contenidocapa1 = 'Áreas Públicas'
+        this.contenidocapa2 = 'Public Areas'
+      } else if (p == 4) {
+        this.$refs.myDiv1.style.left = '75%'
+        this.$refs.myDiv1.style.top = '37%'
+        this.contenidocapa1 = 'Restaurante'
+        this.contenidocapa2 = 'Restaurant'
+      } else if (p == 5) {
+        this.$refs.myDiv1.style.left = '73%'
+        this.$refs.myDiv1.style.top = '68%'
+        this.contenidocapa1 = 'Bar'
+        this.contenidocapa2 = 'Bar'
+      } else if (p == 6) {
+        this.$refs.myDiv1.style.left = '65%'
+        this.$refs.myDiv1.style.top = '83%'
+        this.contenidocapa1 = 'Lavandería'
+        this.contenidocapa2 = 'Loundry'
+      } else if (p == 7) {
+        this.$refs.myDiv1.style.left = '55%'
+        this.$refs.myDiv1.style.top = '90%'
+        this.contenidocapa1 = 'Mantenimiento'
+        this.contenidocapa2 = 'Manteinance'
+      } else if (p == 8) {
+        this.$refs.myDiv1.style.left = '27.5%'
+        this.$refs.myDiv1.style.top = '88.5%'
+        this.contenidocapa1 = 'Contabilidad'
+        this.contenidocapa2 = 'Accounting'
+      } else if (p == 9) {
+        this.$refs.myDiv1.style.left = '12%'
+        this.$refs.myDiv1.style.top = '78%'
+        this.contenidocapa1 = 'Recursos Humanos'
+        this.contenidocapa2 = 'Human Resources'
+      } else if (p == 10) {
+        this.$refs.myDiv1.style.left = '3%'
+        this.$refs.myDiv1.style.top = '65%'
+        this.contenidocapa1 = 'Servicio a la Habitación'
+        this.contenidocapa2 = 'Room Service'
+      } else if (p == 11) {
+        this.$refs.myDiv1.style.left = '11%'
+        this.$refs.myDiv1.style.top = '48%'
+        this.contenidocapa1 = 'Ama de Llaves'
+        this.contenidocapa2 = 'Housekeeping'
+      } else if (p == 12) {
+        this.$refs.myDiv1.style.left = '21%'
+        this.$refs.myDiv1.style.top = '18%'
+        this.contenidocapa1 = 'Botones'
+        this.contenidocapa2 = 'Bellboy'
+      } else if (p == 13) {
+        this.$refs.myDiv1.style.left = '29%'
+        this.$refs.myDiv1.style.top = '5%'
+        this.contenidocapa1 = 'Reservas'
+        this.contenidocapa2 = 'Reservations'
+      }
+    },
   },
 }
 </script>

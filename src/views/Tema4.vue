@@ -25,7 +25,7 @@
     #t_4_1.titulo-segundo
       h2 4.1 Normativa de prevención de explotación sexual comercial de niños, niñas y adolescentes
 
-    p.mb-5 El Manual de buenas prácticas para la prevención de la ESCNNA en viajes y turismo, (MinComercio, s.f.) dirigido a los prestadores de servicios turísticos es bastante específico en este tema.
+    p.mb-5 El <b>Manual de Buenas Prácticas para la Prevención de la ESCNNA en Viajes y Turismo, (MinComercio, s.f.)</b> dirigido a los prestadores de servicios turísticos es bastante específico en este tema.
     
     .row.mb-5
       .col-lg-1
@@ -40,7 +40,7 @@
             i.fas.fa-quote-right    
       .col-lg-1
 
-    p.mb-5 Se invita a descargar y leer el Manual de buenas prácticas para la prevención de la ESCNNA en viajes y Turismo.
+    p.mb-5 Se invita a descargar y leer el Manual de Buenas Prácticas para la Prevención de la ESCNNA en Viajes y Turismo.
 
     .row.mb-5
       .col-lg-3
@@ -52,7 +52,7 @@
             p <b>Anexo.</b> Manual de Buenas Prácticas para la Prevención de la ESCNNA en Viajes y Turismo.
       .col-lg-3
 
-    p Es deber del recepcionista conocer la normativa y, en caso de identificar situaciones específicas, debe avisar de manera oportuna al departamento de seguridad del hotel, o comunicarse con la línea denuncia nacional o con el ICBF.
+    p Es deber del recepcionista conocer la normativa y, en caso de identificar situaciones específicas, <b>debe avisar de manera oportuna al departamento de seguridad del hotel, o comunicarse con la línea de denuncia nacional o con el ICBF.</b>
 
     Separador
 
@@ -87,20 +87,20 @@
       .col-lg-10
         .cajon.color-secundario.cajon2.p-5
           div.m-3
-            p.mb-4 En Colombia se identifica de la siguiente manera.
+            p.mb-4 En Colombia se identifica de la siguiente manera:
             ul.lista-ul--color
               li 
                 i.fas.fa-atom
                 | Registro civil de nacimiento.
               li 
                 i.fas.fa-atom
-                | Tarjeta de identidad: usada para fines de identificación, la cual puede ser tramitada para niños y niñas mayores de 7 años.
+                span <b>Tarjeta de identidad</b>: usada para fines de identificación, la cual puede ser tramitada para niños y niñas mayores de 7 años.
               li 
                 i.fas.fa-atom
-                | Cédula de ciudadanía: una vez cumplidos los 18 años, es el único documento de identificación válido para todos los actos civiles, políticos, administrativos y judiciales según la Ley 39 de 1961.
+                span <b>Cédula de ciudadanía</b>: una vez cumplidos los 18 años, es el único documento de identificación válido para todos los actos civiles, políticos, administrativos y judiciales según la Ley 39 de 1961.
               li 
                 i.fas.fa-atom
-                | Cédula de extranjería: para extranjeros que residen en Colombia expedida por Migración Colombia, con los mismos efectos de la cédula de ciudadanía excepto al derecho a votar.
+                span <b>Cédula de extranjería</b>: para extranjeros que residen en Colombia expedida por Migración Colombia, con los mismos efectos de la cédula de ciudadanía excepto al derecho a votar.
 
       .col-lg-1       
 

@@ -13,12 +13,11 @@
     .row.mb-5
       .col-lg-1        
       .col-lg-10
-        .cajon.color-secundario.cajon2.p-5
-          p.mb-4 Otras formas impresas para uso en la recepción son:
+        .cajon.color-secundario.cajon2.p-5          
           ol.lista-ol.lista-ol--separador
             li.d-block
               strong Lista de huéspedes
-              p Este listado se puede organizar por número de habitación o alfabéticamente, se utiliza para identificar de manera más ágil en qué habitación se encuentra registrada la persona o quienes están en determinada habitación.
+              p Este listado se puede organizar por número de habitación o alfabéticamente, se utiliza para identificar de manera más ágil en qué habitación se encuentra registrada la persona o quiénes están en determinada habitación.
             li.d-block
               strong Lista de reservas
             li.d-block

@@ -8,7 +8,7 @@
         span 8
       h1 Bitácoras
 
-    p.mb-5 El cuaderno o bitácora de trabajo es en donde se registra de manera cronológica, cualquier información que consideren que puede resultar útil para tener en cuenta dentro de la jornada laboral, entre otros se debe registrar:
+    p.mb-5 El cuaderno o <b>bitácora</b> de trabajo es en donde se registra de manera cronológica, cualquier información que consideren que puede resultar útil para tener en cuenta dentro de la jornada laboral, entre otros se debe registrar:
     
     .row.mb-5
       .col-lg-4
@@ -41,13 +41,13 @@
       .col-lg-4
 
     .row
-      .col-lg-5
+      .col-lg-6
         a.anexo.mb-4(:href="obtenerLink('/downloads/Anexo4_CF07_8_Actividades_para_recibir_y_entregar_turno.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
-            p <b>Anexo.</b> Perfil cargo de recepcionista
-      .col-lg-7
+            p <b>Anexo.</b> Ejemplo actividades para recibir y entregar turno
+      .col-lg-6
 </template>
 
 <script>

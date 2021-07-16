@@ -17,9 +17,9 @@
       .col-lg-5
         h4 Una buena información, y una correcta gestión, facilitan el trabajo del personal, reduce errores y riesgos, principalmente en la prestación del servicio.
       .col-lg-7
-        p En los establecimientos hoteleros se han implementado sistemas informáticos para hacer eficiente la gestión, organizando la información y ayudando las actividades diarias. En el área de recepción se utilizan como base para el desarrollo de las funciones, unos reportes específicos. 
+        p En los establecimientos hoteleros se han implementado sistemas informáticos para hacer eficiente la gestión, organizando la información y ayudando en las actividades diarias. En el área de recepción se utilizan como base para el desarrollo de las funciones, unos reportes específicos. 
 
-    p En el establecimiento que no cuente con software PMS, debe utilizar una metodología manual organizada, lo cual asegurará encontrar la información que se requiere para atender de manera eficaz al huésped.
+    p El establecimiento que no cuente con software PMS, debe utilizar una metodología manual organizada, lo cual asegurará encontrar la información que se requiere para atender de manera eficaz al huésped.
 
     Separador
 
@@ -27,15 +27,15 @@
       h2 3.1 Reserva
 
     .row.mb-5
-      .col-lg-1
-      .col-lg-4.p-0
+      .col-1
+      .col-lg-4.p-0.d-flex.align-items-center
         figure
           img(src='@/assets/curso/tema3/img02.png')   
       .col-lg-6.p-3.div_3_1.d-flex.align-items-center        
         div.p-3.div_3_1_2
           p.mb-4 Es toda acción mediante la cual una persona de manera directa o a través de un tercero (agente), realiza una petición para contratar unos servicios, principalmente, de alojamiento y en una fecha determinada. Esta reserva puede ser individual o de grupo.
           p Una de las primeras actividades a realizar es conocer las reservas del día con el fin de preparar todo lo concerniente al recibimiento del cliente. Usualmente, es el departamento de reservas quien prepara la información y la entrega a recepción.
-      .col-lg-1
+      .col-1
 
     p.mb-5 Con la sistematización, se presenta la facilidad de obtener un reporte en cualquier momento del día, y contiene información como:
       
@@ -110,9 +110,9 @@
       //- .tarjeta debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
-      .tarjeta.color-acento-botones--borde.tab1.p-4(titulo="Reserva con garantía")
+      .tarjeta.color-acento-botones--borde.tab1.p-4(titulo="Reservas con garantía")
         h4 Reservas con garantía
-        p Son aquellas reservas que han recibido una cantidad de dinero (depósito), o un medio de válido (tarjeta de crédito, carta de empresa, voucher de agencia), con el fin de garantizar la habitación. Generalmente es el valor de la primera noche de estadía o del total de la estadía de acuerdo con la política del hotel. En caso de que el huésped no llegue y no haya realizado el proceso de cancelación se le llama No Show. 
+        p Son aquellas reservas que han recibido una cantidad de dinero (depósito), o un medio válido (tarjeta de crédito, carta de empresa, voucher de agencia), con el fin de garantizar la habitación. Generalmente es el valor de la primera noche de estadía o del total de la estadía de acuerdo con la política del hotel. En caso de que el huésped no llegue y no haya realizado el proceso de cancelación se le llama No Show. 
       
       .tarjeta.color-acento-botones--borde.tab1.p-4(titulo="Reservas sin garantía")
         h4 Reservas sin garantía
@@ -162,7 +162,7 @@
       .col-lg-1
       .col-lg-10.div_3_2.p-5
         figure
-          p.BorTit <b>Figura 2.</b> Rack de ocupación
+          p.BorTit <b>Figura 2.</b> Reporte de habitaciones
           img(src='@/assets/curso/tema3/img04.png')   
           figcaption Nota. Tomada de EzeeFrontDesk
       .col-lg-1
@@ -170,7 +170,7 @@
     Separador
 
     #t_3_3.titulo-segundo
-      h2 3.3 Información de ocupación
+      h2 3.3 Informe de ocupación
 
     p.mb-5 Haciendo uso del software hotelero se puede obtener el reporte de ocupación y de acuerdo con los parámetros que se establezcan para este reporte, la información que se puede obtener es:
 
@@ -228,7 +228,7 @@
         figure.mb-4   
           img(src='@/assets/curso/tema3/img05.svg') 
         h1.text-center Artículo 81
-        p.text-center De la prueba del contrato de Hospedaje. El contrato de hospedajes se probará mediante la Tarjeta de Registro Hotelero, en la cual se identificará el huésped y sus acompañantes quienes responderán solidariamente de sus obligaciones (Ley 300 de 1996, Arts. 79 y 81). 
+        p.text-center De la prueba del contrato de hospedaje. El contrato de hospedajes se probará mediante la Tarjeta de Registro Hotelero, en la cual se identificará el huésped y sus acompañantes quienes responderán solidariamente de sus obligaciones (Ley 300 de 1996, Arts. 79 y 81). 
       .col-lg-1
 
     .row.mb-5
@@ -307,7 +307,7 @@
     #t_3_5.titulo-segundo
       h2 3.5 Llaves de habitaciones
 
-    p.mb-5 En un principio se usaron las pesadas llaves de hierro y luego de cobre; su cometido fundamental era la apertura de las puertas, pero había algo adicional y es que no era tan importante la llave, como el llavero. Este se convirtió por bastante tiempo en la identidad del hotel. Las llaves y sus llaveros eran tan pesadas que servían para que el cliente no olvidara dejarlas en la recepción, y pedirlas al regresar al hotel, lo que tácitamente provocaban la interacción con el huésped. Estas llaves se guardaban en el casillero de madera, con los números de habitación y los nombres de los huéspedes, lo cual ayudaba a los recepcionistas, además de saber si el huésped estaba o no en el hotel, a recordar los nombres y poder brindar un trato más personalizado al huésped.
+    p.mb-5 En un principio se usaron las pesadas llaves de hierro y luego de cobre; su cometido fundamental era la apertura de las puertas, pero había algo adicional y es que no era tan importante la llave, como el llavero. Este se convirtió por bastante tiempo en la identidad del hotel. Las llaves y sus llaveros eran tan pesadas que servían para que el cliente no olvidara dejarlas en la recepción, y pedirlas al regresar al hotel, lo que tácitamente provocaba la interacción con el huésped. Estas llaves se guardaban en el casillero de madera, con los números de habitación y los nombres de los huéspedes, lo cual ayudaba a los recepcionistas, además de saber si el huésped estaba o no en el hotel, a recordar los nombres y poder brindar un trato más personalizado al huésped.
 
    
     SlyderC(:datos="datosSlyder")    
@@ -364,7 +364,7 @@
     h4.titulo-cuarto Registro de huéspedes individuales
 
     p.mb-4 Es el registro que se realiza a un cliente, una pareja o una familia que hace uso del hotel con reserva previa. A efectos de localizar los datos del cliente, se le saluda con amabilidad y educación dándole la bienvenida, se le pregunta el nombre de quien tiene reservada la habitación y se le pide su documento de identidad. 
-    p.mb-5 Para agilizar el tiempo de registro se deben elaborar los pre-registros, en los que se incluyen información que se conoce del pasajero, en el momento del registro se pide amablemente al huésped verificar que la información impresa es correcta:
+    p.mb-5 Para agilizar el tiempo de registro se deben elaborar los pre-registros, en los que se incluye información que se conoce del pasajero, en el momento del registro se pide amablemente al huésped verificar que la información impresa es correcta:
 
     .row.mb-5
       .col-lg-5.d-flex.flex-column
@@ -387,7 +387,7 @@
               | Fecha de salida.          
       .col-lg-7.d-flex.flex-column
         .cajon.color-secundario.cajon2.p-5(style="height:100%")
-          p.mb-4 Los datos para llenar por lo general serán:
+          p.mb-4 Los datos para llenar, por lo general, serán:
           ul.lista-ul--color
             li 
               i.fas.fa-atom
@@ -405,12 +405,12 @@
       .col-lg-1
       .col-lg-10
         LineaTiempoD.color-primario.lineatiempo1
-          .divpasotitulo(numero="1" titulo="Clientes particulares/individuales/walk-in")
+          .divpasotitulo(numero="1" titulo="Clientes particulares / individuales / walk-in")
             div.divpaso.p-4
               p.m-0 Cuando el huésped responde “con tarjeta de crédito” se le solicita, amablemente, la tarjeta con el fin de elaborar un pagaré o registro donde se toman los siguientes datos: tipo de tarjeta, nombre del titular, número de tarjeta de crédito, fecha de caducidad; explicándole que es por su propia comodidad ya que tendrá crédito abierto en todas las áreas de consumo del hotel, se le explica además que son políticas del hotel. En caso de querer pagar en efectivo, se pregunta el número de noches y se le solicita el pago por anticipado de su estadía, para no estar solicitando el pago diariamente, sugiriendo dejar un depósito adicional para cubrir los gastos extras, se le explica al huésped que es un reglamento del hotel.
           div(numero="2" titulo="Empresarial")
             div.divpaso.divpaso.p-4
-              p.m-0 En el momento de solicitud de la reserva se ha recibido información que la empresa será la encargada de la cuenta del alojamiento, la empresa previo a la llegada del huésped debe enviar una carta o un correo empresarial informando que valores serán cubiertos por la empresa y cuáles deberán ser cancelados directamente por el huésped. 
+              p.m-0 En el momento de solicitud de la reserva se ha recibido información que la empresa será la encargada de la cuenta del alojamiento, la empresa previo a la llegada del huésped debe enviar una carta o un correo empresarial informando qué valores serán cubiertos por la empresa y cuáles deberán ser cancelados directamente por el huésped. 
           div(numero="3" titulo="Agencias de viaje")
             div.divpaso.divpaso.p-4
               p.mb-4 Establecen acuerdos con los hoteles y disponen de unas tarifas especiales en las que usualmente incluye el desayuno. La agencia se hace cargo mediante bonos o voucher que entregan a los clientes para ser entregados en el hotel, el cliente a su salida deberá pagar directamente al hotel los gastos extras o que no haya acordado con la agencia. En el listado de llegadas debe reflejarse esta información con el fin de que el bono sea solicitado al cliente y no le realicen cargo directo a su cuenta, además de tener claro cuáles servicios contrató el huésped a través de la agencia.
@@ -478,7 +478,7 @@
           
       .col-lg-3
 
-    p.mb-5 Con base en esta información se procede a hacer el pre-registro y a la llegada de los pasajeros solo será necesario la firma en el registro y algún dato puntual que haga falta en el mismo. En caso de tener cuenta maestra se solicita la firma del guía o conductor del grupo y será la responsable de los valores a cancelar.
+    p.mb-5 Con base en esta información se procede a hacer el pre-registro y a la llegada de los pasajeros solo será necesaria la firma en el registro y algún dato puntual que haga falta en el mismo. En caso de tener cuenta maestra se solicita la firma del guía o conductor del grupo y será la responsable de los valores a cancelar.
     
     .row.mb-5
       .col-lg-2
@@ -581,7 +581,7 @@
       .col-lg-1
       .col-lg-4.div_3_2.p-5.py-4
         figure
-          p.BorTit <b>Figura 8.</b> Self check-in systems 
+          p.BorTit <b>Figura 3.</b> Self check-in systems 
           img(src='@/assets/curso/tema3/img08.png')   
           figcaption Nota. Tomada de Travelarz (2017)
       .col-lg-6.div_3_2_3.p-5.py-5.d-flex

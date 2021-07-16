@@ -14,7 +14,7 @@
           img(src='@/assets/curso/tema2/img01.svg')  
       .col-lg-6
         .cajon.color-secundario.cajon1.p-5
-          p.mb-5 Es el área donde el huésped desde que llega hasta se va, solicita sus servicios, por este motivo el trato que reciba aquí es de vital importancia en el resultado final de la estadía. 
+          p.mb-5 Es el área donde el huésped desde que llega hasta que se va, solicita sus servicios, por este motivo el trato que reciba aquí es de vital importancia en el resultado final de la estadía. 
           p La importancia del departamento de recepción en el desarrollo de la operación del hotel es fundamental, no solo por las personas que constantemente solicitan los servicios, sino porque es el centro de operaciones y comunicación del hotel.
     
     Separador
@@ -214,7 +214,7 @@
         .bloque-texto-a.color-secundario.p-4.p-md-5.mb-5.bloque2 
           .row.m-0.align-items-center.justify-content-between
             .col-lg-4.mb-4.mb-lg-0
-              h2.mb-0 Un perfil de un puesto de trabajo es la descripción de un conjunto de tareas y responsabilidades que se asignan a una persona dentro de una organización.
+              h4.mb-0 Un perfil de un puesto de trabajo es la descripción de un conjunto de tareas y responsabilidades que se asignan a una persona dentro de una organización.
             .col-lg-8
               .bloque-texto-a__texto.p-5
                 p Es así que, para desarrollar la función de recepcionista, se requiere cumplir con unos requisitos para garantizar el cumplimiento satisfactorio de las actividades. Se consideran el nivel de estudios, experiencia, conocimientos, aptitudes y características específicas en su personalidad, considerando también valores éticos y morales.
@@ -256,7 +256,7 @@
             h3.inline.text-regular.d-inline Los gerentes de recepción deben participar activamente en la recopilación de información de interés para los huéspedes. También deben estar activos en el desarrollo de procedimientos para que el área de recepción comunique esta información efectivamente. Las relaciones que el gerente de recepción desarrolla con los otros directores de departamento y sus empleados son vitales para recopilar esta información. 
             
           .bloque-texto-d__autor 
-            span <b>(Bardy, 2011)</b>    
+            span <b>(Bardy, 2011).</b>    
             i.fas.fa-quote-right        
 
     p.mb-5 A continuación, se comparten estas relaciones en la infografía. 
@@ -386,12 +386,12 @@ export default {
         this.$refs.myDiv1.style.left = '65%'
         this.$refs.myDiv1.style.top = '83%'
         this.contenidocapa1 = 'Lavandería'
-        this.contenidocapa2 = 'Loundry'
+        this.contenidocapa2 = 'Laundry'
       } else if (p == 7) {
         this.$refs.myDiv1.style.left = '55%'
         this.$refs.myDiv1.style.top = '90%'
         this.contenidocapa1 = 'Mantenimiento'
-        this.contenidocapa2 = 'Manteinance'
+        this.contenidocapa2 = 'Maintenance'
       } else if (p == 8) {
         this.$refs.myDiv1.style.left = '27.5%'
         this.$refs.myDiv1.style.top = '88.5%'

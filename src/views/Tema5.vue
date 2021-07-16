@@ -40,8 +40,8 @@
               p.mb-4 Cuando el empleado porta el uniforme, entra en una actitud de responsabilidad y trabajo, con él, actúa en nombre de la empresa y busca presentar lo mejor de ella.
 
     .row.mb-5
-      .col-lg-1
-      .col-lg-4.p-0
+      .col-1
+      .col-lg-4.p-0.d-flex.align-items-center
         figure
           img(src='@/assets/curso/tema5/img01.png')   
       .col-lg-6.p-3.div_3_1.d-flex.align-items-center        

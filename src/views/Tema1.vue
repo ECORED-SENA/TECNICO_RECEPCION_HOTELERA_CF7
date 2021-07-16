@@ -6,7 +6,7 @@
     .titulo-principal
       .titulo-principal__numero
         span 1
-      h1 Huesped
+      h1 Huésped
 
     figure.mb-5
       img(src='@/assets/curso/tema1/img01.png')     
@@ -15,7 +15,7 @@
       .col-lg-2
       .col-lg-8
         .cajon.color-secundario.cajon1.p-5
-          p.m-3.mx-5 Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+          p.m-3.mx-5 Es el cliente que se aloja en un establecimiento de servicio de alojamiento (hotel, apartahotel, posada, etc.); la palabra viene del latín <b><i>hospes</i></b>
       .col-lg-2 
 
     .row.mb-5
@@ -85,19 +85,19 @@ export default {
       {
         titulo: 'Cliente walk-in',
         texto:
-          'Es el cliente que llega al hotel sin previa reserva y no es cliente permanente del hotel, su estadía generalmente es muy corta y se da manera fortuita. <br>Con estos huéspedes se debe tener especial cuidado por motivos de seguridad, ya que en principio desconocemos su procedencia. Suelen tener consumos en el hotel, por lo que garantizar adecuadamente el pago (pago adelantado + una garantía) es una medida pertinente. <br>Siempre será importante identificar su motivación con el fin de ofrecer el servicio que busca.',
+          'Es el cliente que llega al hotel sin previa reserva y no es cliente permanente del hotel, su estadía generalmente es muy corta y se da de manera fortuita. <br>Con estos huéspedes se debe tener especial cuidado por motivos de seguridad, ya que en principio desconocemos su procedencia. Suelen tener consumos en el hotel, por lo que garantizar adecuadamente el pago (pago adelantado + una garantía) es una medida pertinente. <br>Siempre será importante identificar su motivación con el fin de ofrecer el servicio que busca.',
         imagen: require('@/assets/curso/tema1/img03.png'),
       },
       {
         titulo: 'Cliente frecuente',
         texto:
-          'Este tipo de cliente usa de manera asidua el hotel, es conocido por el personal que allí labora, hace del hotel su segunda casa. Por lo general son clientes de tipo corporativo o parte de una tripulación que visitan periódicamente el destino. Debido al continuo uso del establecimiento hotelero sus requerimientos pueden ser repetitivos, conoce muy bien el lugar y los empleados del hotel.  Su familiaridad con el ambiente lo lleva a sentirse seguro y tranquilo. Con este tipo de huéspedes es fácil caer en la rutina, por lo que conviene siempre tener una actitud abierta frente a ellos haciéndoles sentir que están en casa, pero no que son uno más de la casa. ',
+          'Este tipo de cliente usa de manera asidua el hotel, es conocido por el personal que allí labora, hace del hotel su segunda casa.<br>Por lo general son clientes de tipo corporativo o parte de una tripulación que visitan periódicamente el destino.<br>Debido al continuo uso del establecimiento hotelero sus requerimientos pueden ser repetitivos, conoce muy bien el lugar y los empleados del hotel.  Su familiaridad con el ambiente lo lleva a sentirse seguro y tranquilo.<br>Con este tipo de huéspedes es fácil caer en la rutina, por lo que conviene siempre tener una actitud abierta frente a ellos haciéndoles sentir que están en casa, pero no que son uno más de la casa. ',
         imagen: require('@/assets/curso/tema1/img04.png'),
       },
       {
         titulo: 'Cliente esporádico',
         texto:
-          'Este tipo de cliente usa el hotel de acuerdo con la circunstancia puntual que está viviendo. <br>Muy probablemente ha visitado el hotel varias veces, pero no lo hace con una frecuencia tal alta. <br>Es un tipo de huéspedes al que hay que comunicarles las situaciones nuevas del hotel sin hacerles sentir que son extraños.<br>Con estos clientes siempre es importante recurrir a los históricos del PMS y corroborar esa información al momento del registro.',
+          'Este tipo de cliente usa el hotel de acuerdo con la circunstancia puntual que está viviendo. <br>Muy probablemente ha visitado el hotel varias veces, pero no lo hace con una frecuencia tan alta. <br>Es un tipo de huéspedes al que hay que comunicarles las situaciones nuevas del hotel sin hacerles sentir que son extraños.<br>Con estos clientes siempre es importante recurrir a los históricos del PMS y corroborar esa información al momento del registro.',
         imagen: require('@/assets/curso/tema1/img05.png'),
       },
       {
@@ -109,7 +109,7 @@ export default {
       {
         titulo: 'Huésped permanente',
         texto:
-          'En una escala superior en términos de frecuencia, están los huéspedes permanentes. <br>Estos son personas que por su labor o por alguna circunstancia especifica escogen vivir en el hotel. Aquí las estadías superar los 30 días continuos, alcanzando varios meses o hasta años. <br>Debido a la extensión de estas estadías, estos clientes tienen tratos preferentes en términos de tarifa y desean ser tratados como el huésped predilecto del hotel, no en vano el hotel es su hogar.',
+          'En una escala superior en términos de frecuencia, están los huéspedes permanentes. <br>Estos son personas que por su labor o por alguna circunstancia específica escogen vivir en el hotel. Aquí las estadías superan los 30 días continuos, alcanzando varios meses o hasta años. <br>Debido a la extensión de estas estadías, estos clientes tienen tratos preferentes en términos de tarifa y desean ser tratados como el huésped predilecto del hotel, no en vano el hotel es su hogar.',
         imagen: require('@/assets/curso/tema1/img07.png'),
       },
     ],
@@ -129,7 +129,7 @@ export default {
         this.$refs.myDiv1.style.left = '0%'
         this.$refs.myDiv1.style.top = '0%'
         this.contenidocapa1 =
-          'Los adultos mayores que por su disponibilidad de tiempo y recursos viajan generalmente con fines de esparcimiento. Se les conocen como la generación Boomer.<br>Por lo general, disponen de presupuestos más altos a la hora de viajar y suelen viajar en pareja o con amigos. Sus motivaciones de viaje los lleva a disfrutar las áreas del hotel en forma tranquila, requieren mayores explicaciones para el uso de las mismas y sus necesidades como viajeros generalmente se enfoca en salir de la rutina, por esto contar con un excelente servicio les reconforta.'
+          'Los adultos mayores que por su disponibilidad de tiempo y recursos viajan generalmente con fines de esparcimiento. Se les conocen como la generación Boomer.<br>Por lo general, disponen de presupuestos más altos a la hora de viajar y suelen viajar en pareja o con amigos. Sus motivaciones de viaje los lleva a disfrutar las áreas del hotel en forma tranquila, requieren mayores explicaciones para el uso de las mismas y sus necesidades como viajeros generalmente se enfocan en salir de la rutina, por esto contar con un excelente servicio les reconforta.'
       } else if (p == 2) {
         this.$refs.myDiv1.style.left = '65.6%'
         this.$refs.myDiv1.style.top = '0%'
@@ -139,7 +139,7 @@ export default {
         this.$refs.myDiv1.style.left = '35.5%'
         this.$refs.myDiv1.style.top = '24%'
         this.contenidocapa1 =
-          'Son personas que trabajan con el estado y viajan por trabajo, pero tienen un matiz adicional y es que, por lo general y en virtud del cargo que desempeñan o del rango que tengan, su tratamiento puede requerir un protocolo específico, principalmente por su seguridad.<br>Por lo tanto, el hotel determina su propio procedimiento para el manejo de ellos.<br>Temas como el lugar en donde realizan su registro, habitaciones para su personal de seguridad ubicadas de manera estratégica y forma de atender sus requerimientos deben ser considerados.'
+          'Son personas que trabajan con el estado y viajan por trabajo, pero tienen un matiz adicional y es que, por lo general y en virtud del cargo que desempeñan o del rango que tengan, su tratamiento puede requerir un protocolo específico, principalmente por su seguridad. Por lo tanto, el hotel determina su propio procedimiento para el manejo de ellos.<br>Temas como el lugar en donde realizan su registro, habitaciones para su personal de seguridad ubicadas de manera estratégica y forma de atender sus requerimientos deben ser considerados.'
       } else if (p == 4) {
         this.$refs.myDiv1.style.left = '35.5%'
         this.$refs.myDiv1.style.top = '0%'
@@ -154,7 +154,7 @@ export default {
         this.$refs.myDiv1.style.left = '0%'
         this.$refs.myDiv1.style.top = '49%'
         this.contenidocapa1 =
-          'Estos viajeros son los que tienen mayores expectativas y están dispuestos a pagar por la experiencia.<br>Por lo general el precio no es problema para ellos, son sofisticados, pero y se fijan mucho en el valor de lo que obtienen (relación calidad precio).<br>Por lo general, tienen sus viajes son muy bien planeados y con intervención de asesores especializados. La mayoría de las ocasiones son viajeros de edad adulta, entre los 40 y 60 años que viajan en pareja.'
+          'Estos viajeros son los que tienen mayores expectativas y están dispuestos a pagar por la experiencia.<br>Por lo general el precio no es problema para ellos, son sofisticados, pero se fijan mucho en el valor de lo que obtienen (relación calidad precio).<br>Por lo general, sus viajes son muy bien planeados y con intervención de asesores especializados. La mayoría de las ocasiones son viajeros de edad adulta, entre los 40 y 60 años que viajan en pareja.'
       } else if (p == 7) {
         this.$refs.myDiv1.style.left = '31%'
         this.$refs.myDiv1.style.top = '27%'
@@ -164,7 +164,7 @@ export default {
         this.$refs.myDiv1.style.left = '31%'
         this.$refs.myDiv1.style.top = '24%'
         this.contenidocapa1 =
-          'Son los clientes que viajan por motivos de trabajo o negocios, su permanencia generalmente no excede una semana. Suelen ser muy exigentes con el servicio y por lo general son menos sensibles al precio.<br>Generalmente manejan su tiempo con horarios preestablecidos, agenda de reuniones o visita con sus clientes, por lo cual su disposición para realizar su registro en el momento de ingresar al hotel o para el pago de su cuenta en el momento dejarlo, es limitado.<br>Usualmente la empresa para la cual trabaja es la responsable de coordinar todo lo concerniente a su estadía, entre ellos solicitar la reserva, negociar la tarifa, escoger tipo de habitación y pagar la cuenta.'
+          'Son los clientes que viajan por motivos de trabajo o negocios, su permanencia generalmente no excede una semana. Suelen ser muy exigentes con el servicio y por lo general son menos sensibles al precio.<br>Generalmente manejan su tiempo con horarios preestablecidos, agenda de reuniones o visitas con sus clientes, por lo cual su disposición para realizar su registro en el momento de ingresar al hotel o para el pago de su cuenta en el momento de dejarlo, es limitado.<br>Usualmente la empresa para la cual trabaja es la responsable de coordinar todo lo concerniente a su estadía, entre ellos solicitar la reserva, negociar la tarifa, escoger tipo de habitación y pagar la cuenta.'
       }
     },
   },

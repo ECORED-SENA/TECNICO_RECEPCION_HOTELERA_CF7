@@ -327,7 +327,7 @@
             a
               img(src='@/assets/curso/tema2/img31.svg')
 
-          div.contenido2.py-1.px-2(id="myDiv1" ref="myDiv1" style="display:inline")
+          div.contenido2.py-1.px-2(id="myDiv1" ref="myDiv1" style="display:none")
             h4.mb-0(v-html="contenidocapa1")
             i 
               b(v-html="contenidocapa2")

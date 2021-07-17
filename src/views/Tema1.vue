@@ -6,7 +6,7 @@
     .titulo-principal
       .titulo-principal__numero
         span 1
-      h1 Huésped
+      h1 Huésped.
 
     figure.mb-5
       img(src='@/assets/curso/tema1/img01.png')     

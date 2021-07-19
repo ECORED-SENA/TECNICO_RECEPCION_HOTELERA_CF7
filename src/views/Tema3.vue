@@ -612,13 +612,13 @@ export default {
       {
         titulo: 'Llave mecánica',
         texto:
-          'Es el tipo de llave para el tipo de cerradura tradicional. Se recomienda en hoteles donde aún se usa este tipo de llaves, usar llaves de seguridad que son más difíciles de copiar. Posteriormente estas llaves mecánicas evolucionaron a llaves de tarjeta perforadas o Ving-Card, que luego se convirtieron en tarjetas magnéticas.',
+          'Es el tipo de llave para el tipo de cerradura tradicional. Se recomienda en hoteles donde aún se usa este tipo de llaves, usar llaves de seguridad que son más difíciles de copiar.<br>Posteriormente estas llaves mecánicas evolucionaron a llaves de tarjeta perforadas o Ving-Card, que luego se convirtieron en tarjetas magnéticas.',
         imagen: require('@/assets/curso/tema3/img09.png'),
       },
       {
         titulo: 'Llave magnética para cerradura electrónica',
         texto:
-          'Estas llaves se presentan en varios formatos acorde a su tecnología (banda magnética o RDFI - proximidad). Su programación se realiza con un software que integrado al PMS lleva un control de las tarjetas programadas, además de poder inhabilitarlas en caso de pérdida. En la actualidad, con el avance de la tecnología se puede adoptar el sistema de convertir el smartphone del cliente en su propia llave personalizada. Esta tecnología crea un nuevo umbral de seguridad, de control y de personalización en la industria (Canalis, 2021). El recepcionista es el encargado de entregar la llave al huésped en el momento de ingreso, la pérdida de las llaves tiene un costo para el huésped ya que pasa a ser de su responsabilidad durante la estadía.',
+          'Estas llaves se presentan en varios formatos acorde a su tecnología (banda magnética o RDFI - proximidad). Su programación se realiza con un software que integrado al PMS lleva un control de las tarjetas programadas, además de poder inhabilitarlas en caso de pérdida.<br>En la actualidad, con el avance de la tecnología se puede adoptar el sistema de convertir el smartphone del cliente en su propia llave personalizada. Esta tecnología crea un nuevo umbral de seguridad, de control y de personalización en la industria (Canalis, 2021).<br>El recepcionista es el encargado de entregar la llave al huésped en el momento de ingreso, la pérdida de las llaves tiene un costo para el huésped ya que pasa a ser de su responsabilidad durante la estadía.',
         imagen: require('@/assets/curso/tema3/img06.png'),
       },
       {

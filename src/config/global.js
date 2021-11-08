@@ -1,7 +1,6 @@
 export default {
   global: {
-    componenteFormativo:
-      'Organización del área y front office                                ',
+    componenteFormativo: 'Front Office: Check-In',
     descripcionCurso:
       'La recepción interviene en la coordinación e interrelación con las demás áreas del hotel, siendo el primer contacto que se tiene con el cliente, donde un trato amable y profesional, responde a sus necesidades y asegurará que desee volver y lo recomiende. La importancia de conocer los procedimientos contribuye con el cumplimiento de la misión y visión del establecimiento hotelero.',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.svg'),
